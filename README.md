@@ -25,17 +25,17 @@ The `pyber_data_summary_df` DataFrame and `Total Fare by City Type` multiple lin
 ![pyber_summary_df_total_rides](/analysis/pyber_summary_df_total_rides.png)
 
 The `pyber_summary_df` DataFrame showed that Rural, Suburban, and Urban cities had 125, 625, and 1625 total rides in four months, consecutively. We can assume that the total number of rides directly correlates to the population size of each city type, and by association, ride demand. We observed the following:
-* Urban cities had the largest number of total rides of 1625. We can assume that this is due to the fact that Urban cities have the largest population size among the three city types, therefore also have the highest ride demand. 
+* Urban cities had the largest number of total rides of 1625. We can assume that this is because Urban cities have the largest population size among the three city types, therefore also have the highest ride demand. 
 * Since Suburban cities have the second-largest population size and ride demand, they had the second-largest number of total rides of 625. 
 * Since Rural cities have the smallest population size and ride demand, they had the smallest number of total rides of 125.
 
 #### 2. Total Fares
 ![pyber_summary_df_total_fares](/analysis/pyber_summary_df_total_fares.png)
 
-The `pyber_summary_df` DataFrame showed that Rural, Suburban, and Urban cities had $4,327.93, $19,356.33, and $39,854.38 in total fares in four months, consecutively. The total fares directly correlate to the total rides of each city type. We observed the following:
-* Since Urban cities had the highest total rides among the three city types, they also had the largest amount of total fares of $39,854.38. 
-* Since Suburban cities had the second-highest total rides, they had the second-largest amount of total fares of $19,356.33. 
-* Since Rural cities had the lowest total rides, they had the smallest amount of total fares of $4,327.93.
+The `pyber_summary_df` DataFrame showed that Rural, Suburban, and Urban cities had $4,327.93, $19,356.33, and $39,854.38 in total fares in four months, consecutively. The total fares directly correlate to the number of total rides and ride demand of each city type. We observed the following:
+* Since Urban cities had the highest number of total rides and ride demand among the three city types, they also had the largest amount of total fares of $39,854.38. 
+* Since Suburban cities had the second-highest number of total rides and ride demand, they had the second-largest amount of total fares of $19,356.33. 
+* Since Rural cities had the lowest number of total rides and ride demand, they had the smallest amount of total fares of $4,327.93.
 
 #### 3. Total Drivers
 ![pyber_summary_df_total_drivers](/analysis/pyber_summary_df_total_drivers.png)
@@ -48,7 +48,7 @@ The `pyber_summary_df` DataFrame showed that Rural, Suburban, and Urban cities h
 #### 4. Average Fare per Ride
 ![pyber_summary_df_avg_fare_per_ride](/analysis/pyber_summary_df_avg_fare_per_ride.png)
 
-The `pyber_summary_df` DataFrame showed that Rural, Suburban, and Urban cities had an average fare per ride of $34.62, $30.97, and $24.53 in four months, consecutively. The average fares per ride were caculated by dividing the total fares by total rides for each type. We observed the following:
+The `pyber_summary_df` DataFrame showed that Rural, Suburban, and Urban cities had an average fare per ride of $34.62, $30.97, and $24.53 in four months, consecutively. The average fares per ride were calculated by dividing the total fares by total rides for each type. We observed the following:
 * Since Urban cities had highest amount of total fares and number of total rides, they had the lowest average fare per ride of $24.53.
 * Since Suburban cities had the second-highest amount of total fares and number of total rides, they had the second-lowest average fare per ride of $30.97.
 * Since Rural cities had the lowest number of total fares and rides, they had the highest average fare per ride of $34.62. 
@@ -58,7 +58,7 @@ We can conclude that the higher the amount of total fares and number of total ri
 #### 5. Average Fare per Driver
 ![pyber_summary_df_avg_fare_per_driver](/analysis/pyber_summary_df_avg_fare_per_driver.png)
 
-The `pyber_summary_df` DataFrame showed that Rural, Suburban, and Urban cities had an average fare per driver of $55.49, $39.50, and $16.57 in four months, consecutively. The average fares per driver were caculated by dividing the total fares by total drivers for each type. We observed the following:
+The `pyber_summary_df` DataFrame showed that Rural, Suburban, and Urban cities had an average fare per driver of $55.49, $39.50, and $16.57 in four months, consecutively. The average fares per driver were calculated by dividing the total fares by total drivers for each type. We observed the following:
 * Since Urban cities had the highest amount of total fares and number of total drivers, they had the lowest average fare per driver of $16.57.
 * Since Suburban cities had the second-highest amount of total fares and number of total drivers, they also had the second-lowest average fare per driver of $39.50.
 * Since Rural cities had the lowest amount of total fares and number of total drivers, they had the highest average fare per driver of $55.49. 
@@ -79,14 +79,10 @@ The `Total Fare by City Type` multiple line plot showed that the Rural, Suburban
 Based on the results we observed from the `pyber_data_summary_df` DataFrame and `Total Fare by City Type` multiple line plot, we would suggest the following business recommendations to address any disparities among the city types.
 
 ### 1. Increase Total Drivers in Rural Cities
-From the `pyber_data_summary_df` DataFrame, we saw that the ratio of total rides to total drivers (Total Rides : Total Drivers) in Rural cities was as follows 125:78.
-
-The ride demand in Rural cities was higher than the total number of drivers available to accommodate those rides, suggesting that more drivers are needed to meet the need for ride demand. We suggest increasing the number of total drivers in Rural cities to get the ratio of total rides to total drivers to a more evenly distributed measure. If more drivers are available to provide more rides, the ride demand would increase, inevitably increasing total fares as well and bringing in more revenue for the company, while also decreasing the average fare per ride and driver, making ride-sharing more affordable in these cities with smaller populations.
+From the `pyber_data_summary_df` DataFrame, we saw that the ratio of total rides to total drivers (Total Rides : Total Drivers) in Rural cities was 125:78. The ride demand in Rural cities was higher than the total number of drivers available to accommodate those rides, suggesting that more drivers are needed to meet the demand for rides. We suggest increasing the number of total drivers in Rural cities to get the ratio of total rides to total drivers to a more evenly distributed measure. If more drivers are available to provide more rides, the ride demand would potentially increase, inevitably increasing total fares as well and bringing in more revenue for the company, while also decreasing the average fare per ride and driver, making ride-sharing more affordable in these cities with smaller populations.
 
 ### 2. Increase Total Drivers in Suburban Cities
-From the `pyber_data_summary_df` DataFrame, we saw that the ratio of total rides to total drivers (Total Rides : Total Drivers) in Suburban cities was 125:98. 
-
-Similarly to Rural cities, the ride demand in Suburban cities was higher than the total number of drivers available to accommodate those rides, suggesting that more drivers are needed to meet the need for rides. Just as we suggested for Rural cities, we suggest increasing the number of total drivers in Suburban cities to get the ratio of total rides to total drivers to a more evenly distributed measure. Again, the more drivers available, the more rides that can be completed, which could potentially increase demand as well as total fares, bringing in more revenue for the company, while also decreasing the average fare per ride and driver, making ride-sharing more affordable in these cities with smaller populations.
+From the `pyber_data_summary_df` DataFrame, we saw that the ratio of total rides to total drivers (Total Rides : Total Drivers) in Suburban cities was 125:98. Similarly to Rural cities, the ride demand in Suburban cities was higher than the total number of drivers available to accommodate those rides, suggesting that more drivers are needed to meet the demand for rides. Just as we suggested for Rural cities, we suggest increasing the number of total drivers in Suburban cities to get the ratio of total rides to total drivers to a more evenly distributed measure. Again, the more drivers available, the more rides that can be completed, which could potentially increase demand as well as total fares, bringing in more revenue for the company, while also decreasing the average fare per ride and driver, making ride-sharing more affordable in these cities with smaller populations.
 
 ### 3. Decrease Total Drivers in Urban Cities
 From the `pyber_data_summary_df` DataFrame, we saw that the ratio of total rides to total drivers (Total Rides : Total Drivers) in Urban cities was 25:37. 
