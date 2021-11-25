@@ -24,39 +24,58 @@ The `pyber_data_summary_df` DataFrame and `Total Fare by City Type` multiple lin
 #### 1. Total Rides
 ![pyber_summary_df_total_rides](/analysis/pyber_summary_df_total_rides.png)
 
-The `pyber_summary_df` DataFrame showed that Rural, Suburban, and Urban cities had 125, 625, and 1625 total rides in four months, consecutively. We can assume that the total number of rides directly correlates to the population size of each city type, and by association, ride demand. Since Urban cities have the largest population size among the three city types, it makes sense that they also had the largest number of total rides of 1625 and highest ride demand. Since Suburban cities have the second-largest population size, they had the second-largest number of total rides of 625 and second-highest ride demand. Lastly, since Rural cities have the smallest population size, they had the smallest number of total rides of 125 and lowest ride demand.
+The `pyber_summary_df` DataFrame showed that Rural, Suburban, and Urban cities had 125, 625, and 1625 total rides in four months, consecutively. We can assume that the total number of rides directly correlates to the population size of each city type, and by association, ride demand. We observed the following:
+* Urban cities had the largest number of total rides of 1625. We can assume that this is due to the fact that Urban cities have the largest population size among the three city types, therefore also have the highest ride demand. 
+* Since Suburban cities have the second-largest population size and ride demand, they had the second-largest number of total rides of 625. 
+* Since Rural cities have the smallest population size and ride demand, they had the smallest number of total rides of 125.
 
 #### 2. Total Fares
 ![pyber_summary_df_total_fares](/analysis/pyber_summary_df_total_fares.png)
 
-The `pyber_summary_df` DataFrame showed that Rural, Suburban, and Urban cities had $4,327.93, $19,356.33, and $39,854.38 in total fares in four months, consecutively. Similar to the total rides for each city type, the total fares directly correlate to the population size and ride demand of each city type. Since Urban cities have the largest population size and highest ride demand among the three city types, they also had the largest amount of total fares of $39,854.38. Since Suburban cities have the second-largest population size and ride demand, they had the second-largest amount of total fares of $19,356.33. Lastly, since Rural cities have the smallest population size among the three city types, they had the smallest amount of total fares of $4,327.93.
+The `pyber_summary_df` DataFrame showed that Rural, Suburban, and Urban cities had $4,327.93, $19,356.33, and $39,854.38 in total fares in four months, consecutively. The total fares directly correlate to the total rides of each city type. We observed the following:
+* Since Urban cities had the highest total rides among the three city types, they also had the largest amount of total fares of $39,854.38. 
+* Since Suburban cities had the second-highest total rides, they had the second-largest amount of total fares of $19,356.33. 
+* Since Rural cities had the lowest total rides, they had the smallest amount of total fares of $4,327.93.
 
 #### 3. Total Drivers
 ![pyber_summary_df_total_drivers](/analysis/pyber_summary_df_total_drivers.png)
 
-The `pyber_summary_df` DataFrame showed that Rural, Suburban, and Urban cities had 78, 490, and 2405 total drivers in four months, consecutively. Looking back at the total rides and total fares for each city type, we can observe the demand for drivers based on the city type and confirm that the total rides and total fares directly correlates to the number of drivers in each city type. Just as Urban cities had the highest number of total rides and total fares, Urban cities had the second-largest number of total rides and total fares, and Rural cities had the lowest number of total rides and total fares, it is the same for total drivers. 
+The `pyber_summary_df` DataFrame showed that Rural, Suburban, and Urban cities had 78, 490, and 2405 total drivers in four months, consecutively. Similar to the total rides, we can assume that the total number of drivers directly correlates to the population size and ride demand of each city type. We observed the following:
+* Since Urban cities have the largest population size and highest ride demand among the three city types, they had the largest number of total drivers of 2405. 
+* Since Suburban cities have the second-largest population size and ride demand, they had the second-largest number of total drivers of 625. 
+* Since Rural cities have the smallest population size and ride demand, they had the smallest number of total drivers of 125.
 
 #### 4. Average Fare per Ride
 ![pyber_summary_df_avg_fare_per_ride](/analysis/pyber_summary_df_avg_fare_per_ride.png)
 
-The `pyber_summary_df` DataFrame showed that Rural, Suburban, and Urban cities had an average fare per ride of $34.62, $30.97, and $24.53 in four months, consecutively. As we have now observed from the total rides, total fares, and total drivers for each city type, we can see that the average fare per ride correlates directly to demand. Since Urban cities had the highest ride demand, and by relation, drivers, they had the lowest average fare per ride of $24.53. We can conclude that the higher the demand, the lower the average fare per ride. Since Suburban cities had the second-highest ride demand and drivers, they had the second-lowest average fare per ride of $30.97. And since Rural cities had the lowest ride demand and drivers, they had the highest average fare per ride of $34.62. The lower the demand, the higher the average fare per ride.
+The `pyber_summary_df` DataFrame showed that Rural, Suburban, and Urban cities had an average fare per ride of $34.62, $30.97, and $24.53 in four months, consecutively. The average fares per ride were caculated by dividing the total fares by total rides for each type. We observed the following:
+* Since Urban cities had highest amount of total fares and number of total rides, they had the lowest average fare per ride of $24.53.
+* Since Suburban cities had the second-highest amount of total fares and number of total rides, they had the second-lowest average fare per ride of $30.97.
+* Since Rural cities had the lowest number of total fares and rides, they had the highest average fare per ride of $34.62. 
+
+We can conclude that the higher the amount of total fares and number of total rides, the lower the average fare per ride. Conversely, the lower the amount of total fares and number of total rides, the higher the average fare per ride.
 
 #### 5. Average Fare per Driver
 ![pyber_summary_df_avg_fare_per_driver](/analysis/pyber_summary_df_avg_fare_per_driver.png)
 
-The `pyber_summary_df` DataFrame showed that Rural, Suburban, and Urban cities had an average fare per driver of $55.49, $39.50, and $16.57 in four months, consecutively. Just as we observed in our analysis of the average fare per ride, we can see that the average fare per driver coincides with the average fare per ride, and by association, also correlates directly to demand. Since Urban cities had the highest demand and lowest average fare per ride, they had the lowest average fare per driver of $16.57. We can conclude that the higher the demand, the lower the average fare per ride and per driver. Since Suburban cities had the second-highest demand and second-lowest average fare per ride, they also had the second-lowest average fare per driver of $39.50. And since Rural cities had the lowest demand and highest average fare per ride, they had the highest average fare per driver of $55.49. The lower the demand, the higher the average fare per ride and per driver.
+The `pyber_summary_df` DataFrame showed that Rural, Suburban, and Urban cities had an average fare per driver of $55.49, $39.50, and $16.57 in four months, consecutively. The average fares per driver were caculated by dividing the total fares by total drivers for each type. We observed the following:
+* Since Urban cities had the highest amount of total fares and number of total drivers, they had the lowest average fare per driver of $16.57.
+* Since Suburban cities had the second-highest amount of total fares and number of total drivers, they also had the second-lowest average fare per driver of $39.50.
+* Since Rural cities had the lowest amount of total fares and number of total drivers, they had the highest average fare per driver of $55.49. 
+
+We can conclude that the higher the amount of total fares and number of total drivers, the lower the average fare per driver. Conversely, the lower the amount of total fares and number of total drivers, the higher the average fare per driver.
 
 #### 6. Total Weekly Fares
 
 ![PyBer_fare_summary](/analysis/PyBer_fare_summary.png)
 
-The `Total Fare by City Type` multiple line plot showed that the Rural, Suburban, and Urban cities had the lowest, second highest, and highest total weekly fares from January to April 2019, consecutively. The total weekly fares for Rural cities were within the range of a little above $0 to $500 max. The total weekly fares for Suburban cities were within the range of about $550 to $1500 max. Finally, the total weekly fares for Urban cities were within the range of about $1600 to $2500 max. The lines for each city type fluctuate throughout each month, which demonstrates the fluctuation of demand throughout the four months. Just as we saw in the previous 5 metrics, we can assume that the total weekly fare for each city type correlates directly to demand and population size. The bigger the demand and population size, the higher the total weekly fare. Or conversely, the lower the demand and population size, the lower the total weekly fare.
+The `Total Fare by City Type` multiple line plot showed that the Rural, Suburban, and Urban cities had the lowest, second highest, and highest total weekly fares from January to April 2019, consecutively. We observed the following: 
+* The total weekly fares for Rural cities were within the range of $0 to $500. 
+* The total weekly fares for Suburban cities were within the range of $550 to $1500.
+* The total weekly fares for Urban cities were within the range of $1600 to $2500. 
+* The lines for each city type fluctuate throughout each month, which demonstrates the fluctuation of demand throughout the four months. 
 
 ## Summary:
-Based on the results, provide three business recommendations to the CEO for addressing any disparities among the city types.
-
-There is a statement summarizing three business recommendations to the CEO for addressing any disparities among the city types
-
 Based on the results we observed from the `pyber_data_summary_df` DataFrame and `Total Fare by City Type` multiple line plot, we would suggest the following business recommendations to address any disparities among the city types.
 
 ### 1. Increase Total Drivers in Rural Cities
