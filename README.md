@@ -10,6 +10,20 @@ There is a description of the differences in ride-sharing data among the differe
 
 There is a description of the differences in the ride-sharing data for ALL SIX metrics by city type.
 
+![pyber_summary_df](/analysis/pyber_summary_df.png)
+
+![pyber_summary_df_total_rides](/analysis/pyber_summary_df_total_rides.png)
+
+![pyber_summary_df_total_fares](/analysis/pyber_summary_df_total_fares.png)
+
+![pyber_summary_df_total_drivers](/analysis/pyber_summary_df_total_drivers.png)
+
+![pyber_summary_df_avg_fare_per_ride](/analysis/pyber_summary_df_avg_fare_per_ride.png)
+
+![pyber_summary_df_avg_fare_per_driver](/analysis/pyber_summary_df_avg_fare_per_driver.png)
+
+![PyBer_fare_summary](/analysis/PyBer_fare_summary.png)
+
 ## Summary:
 Based on the results, provide three business recommendations to the CEO for addressing any disparities among the city types.
 
